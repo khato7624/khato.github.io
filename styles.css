@@ -52,7 +52,7 @@ p {
     bottom: 20px;
     right: 20px;
     padding: 20px 35px;
-    font-size: 1.7rem;
+    font-size: 1.7rem; /* Larger button */
     color: white;
     background-color: #007BFF;
     text-decoration: none;
@@ -72,7 +72,7 @@ p {
     justify-content: center;
     align-items: flex-start;
     margin-top: 30px;
-    gap: 30px;
+    gap: 30px; /* Space between left and right images */
 }
 
 /* Left image styling */
@@ -86,16 +86,21 @@ p {
 /* Right images styling */
 .right-images {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack the images vertically */
     align-items: flex-start;
     gap: 20px;
 }
 
 .right-images img {
-    max-width: 500px; /* Enlarged right images */
+    max-width: 450px; /* Default size for right-side images */
     height: auto;
     border-radius: 15px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* Specific styling for brainrot.png */
+.right-images img:nth-child(1) { /* Target the first image in the right column */
+    max-width: 600px; /* Larger size for brainrot.png */
 }
 
 /* Sussy Syntax section */
@@ -105,7 +110,7 @@ p {
 }
 
 .sussy-section img {
-    max-width: 600px;
+    max-width: 600px; /* Largest image */
     height: auto;
     border-radius: 15px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
