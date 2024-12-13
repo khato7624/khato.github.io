@@ -8,9 +8,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    text-align: center;
     flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
 }
 
 /* Title styling */
@@ -30,15 +30,17 @@ p {
 
 /* Button styling */
 .btn {
-    display: inline-block;
+    position: fixed; /* Fixes the button in place */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
     padding: 15px 30px;
     font-size: 1.5rem;
     color: white;
     background-color: #007BFF;
     text-decoration: none;
     border-radius: 10px;
-    margin-bottom: 20px;
     transition: background-color 0.3s;
+    z-index: 100; /* Ensures it's always on top */
 }
 
 .btn:hover {
@@ -47,9 +49,9 @@ p {
 
 /* Image styling */
 img {
-    max-width: 500px; /* Increase image size */
+    max-width: 600px; /* Slightly larger images */
     height: auto;
-    margin-top: 20px;
+    margin: 20px auto; /* Center the images with spacing */
     border-radius: 15px; /* Add subtle rounding */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Shadow for emphasis */
 }
