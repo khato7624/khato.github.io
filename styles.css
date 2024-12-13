@@ -51,7 +51,7 @@ p {
 .image-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align the images at the top */
+    align-items: flex-start;
     margin-top: 20px;
 }
 
@@ -61,14 +61,14 @@ p {
     height: auto;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    margin-right: 20px; /* Add space between the left and right images */
+    margin-right: 20px;
 }
 
 /* Right images styling */
 .right-images {
     display: flex;
     flex-direction: column; /* Stack the images vertically */
-    align-items: flex-start; /* Align images to the left of the column */
+    align-items: flex-start;
 }
 
 .right-images img {
@@ -77,4 +77,22 @@ p {
     margin-bottom: 20px; /* Add space between the two images */
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Sussy Syntax section */
+.sussy-section {
+    margin-top: 40px;
+}
+
+.sussy-section img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.sussy-section p {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #07d99d;
 }
