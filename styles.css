@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #222;
+    background-color: black; /* Black background */
+    color: #fff; /* Default text color for visibility */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,28 +15,28 @@ body {
 
 /* Title styling */
 h1 {
-    font-size: 4rem;
+    font-size: 6rem; /* Larger title */
     font-weight: bold;
     margin-bottom: 10px;
-    color: #333;
+    color: #00d2fc; /* Custom blue color for brainrot.exe */
 }
 
-/* Paragraph styling */
+/* Description styling */
 p {
-    font-size: 1.2rem;
+    font-size: 2rem; /* Larger description */
     margin-bottom: 20px;
-    color: #555;
+    color: #07d99d; /* Custom green color for the description */
 }
 
 /* Button styling */
 .btn {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
+    padding: 15px 30px;
+    font-size: 1.5rem;
     color: white;
     background-color: #007BFF;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 20px;
     transition: background-color 0.3s;
 }
@@ -47,9 +47,9 @@ p {
 
 /* Image styling */
 img {
-    max-width: 200px;
+    max-width: 500px; /* Increase image size */
     height: auto;
     margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; /* Add subtle rounding */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Shadow for emphasis */
 }
