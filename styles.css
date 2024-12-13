@@ -10,22 +10,40 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    overflow: hidden; /* Prevent scrolling from video overflow */
     min-height: 100vh;
+}
+
+/* Video background styling */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send video to the background */
+    overflow: hidden;
+}
+
+.video-background iframe {
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Make the video unclickable */
 }
 
 /* Title styling */
 h1 {
-    font-size: 7rem; /* Larger title */
+    font-size: 7rem;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #00d2fc; /* Custom blue */
+    color: #00d2fc;
 }
 
 /* Description styling */
 p {
-    font-size: 2.5rem; /* Larger description */
+    font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #07d99d; /* Custom green */
+    color: #07d99d;
 }
 
 /* Button styling */
@@ -34,13 +52,13 @@ p {
     bottom: 20px;
     right: 20px;
     padding: 20px 35px;
-    font-size: 1.7rem; /* Larger button */
+    font-size: 1.7rem;
     color: white;
     background-color: #007BFF;
     text-decoration: none;
     border-radius: 12px;
     transition: background-color 0.3s, transform 0.2s;
-    z-index: 100;
+    z-index: 10;
 }
 
 .btn:hover {
@@ -54,12 +72,12 @@ p {
     justify-content: center;
     align-items: flex-start;
     margin-top: 30px;
-    gap: 30px; /* Add space between left and right images */
+    gap: 30px;
 }
 
 /* Left image styling */
 .left-image {
-    max-width: 500px; /* Larger image */
+    max-width: 500px;
     height: auto;
     border-radius: 15px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
@@ -68,13 +86,13 @@ p {
 /* Right images styling */
 .right-images {
     display: flex;
-    flex-direction: column; /* Stack the images vertically */
+    flex-direction: column;
     align-items: flex-start;
-    gap: 20px; /* Space between stacked images */
+    gap: 20px;
 }
 
 .right-images img {
-    max-width: 450px; /* Larger right images */
+    max-width: 500px; /* Enlarged right images */
     height: auto;
     border-radius: 15px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
@@ -87,7 +105,7 @@ p {
 }
 
 .sussy-section img {
-    max-width: 600px; /* Largest image */
+    max-width: 600px;
     height: auto;
     border-radius: 15px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
@@ -95,6 +113,7 @@ p {
 }
 
 .sussy-section p {
-    font-size: 2rem; /* Larger text */
+    margin-top: 10px;
+    font-size: 2rem;
     color: #07d99d;
 }
