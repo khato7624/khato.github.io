@@ -15,17 +15,17 @@ body {
 
 /* Title styling */
 h1 {
-    font-size: 6rem;
+    font-size: 7rem; /* Larger title */
     font-weight: bold;
-    margin-bottom: 10px;
-    color: #00d2fc;
+    margin-bottom: 15px;
+    color: #00d2fc; /* Custom blue */
 }
 
 /* Description styling */
 p {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #07d99d;
+    font-size: 2.5rem; /* Larger description */
+    margin-bottom: 30px;
+    color: #07d99d; /* Custom green */
 }
 
 /* Button styling */
@@ -33,18 +33,19 @@ p {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    padding: 15px 30px;
-    font-size: 1.5rem;
+    padding: 20px 35px;
+    font-size: 1.7rem; /* Larger button */
     color: white;
     background-color: #007BFF;
     text-decoration: none;
-    border-radius: 10px;
-    transition: background-color 0.3s;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.2s;
     z-index: 100;
 }
 
 .btn:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
 }
 
 /* Image container layout */
@@ -52,16 +53,16 @@ p {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 20px;
+    margin-top: 30px;
+    gap: 30px; /* Add space between left and right images */
 }
 
 /* Left image styling */
 .left-image {
-    max-width: 400px;
+    max-width: 500px; /* Larger image */
     height: auto;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    margin-right: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
 }
 
 /* Right images styling */
@@ -69,30 +70,31 @@ p {
     display: flex;
     flex-direction: column; /* Stack the images vertically */
     align-items: flex-start;
+    gap: 20px; /* Space between stacked images */
 }
 
 .right-images img {
-    max-width: 300px;
+    max-width: 450px; /* Larger right images */
     height: auto;
-    margin-bottom: 20px; /* Add space between the two images */
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
 }
 
 /* Sussy Syntax section */
 .sussy-section {
-    margin-top: 40px;
+    margin-top: 50px;
+    text-align: center;
 }
 
 .sussy-section img {
-    max-width: 400px;
+    max-width: 600px; /* Largest image */
     height: auto;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
 }
 
 .sussy-section p {
-    margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: 2rem; /* Larger text */
     color: #07d99d;
 }
