@@ -1,39 +1,46 @@
+/* General reset */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
-}
-
-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     text-align: center;
-    padding: 1rem 0;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 5px;
+    flex-direction: column;
 }
 
-main {
-    margin: 1rem 0;
+/* Title styling */
+h1 {
+    font-size: 6rem; /* Bigger than ArnoldC */
+    font-weight: bold;
+    color: #222;
+    margin: 0 0 20px;
 }
 
+/* Image styling */
 img {
-    display: block;
-    margin: 1rem auto;
-    max-width: 100%;
-    height: auto;
+    max-width: 300px;
+    margin: 20px 0;
+    border-radius: 5px;
 }
 
-footer {
-    text-align: center;
-    margin-top: 2rem;
-    padding: 1rem 0;
+/* GitHub link styling */
+.github-link {
+    font-size: 1.5rem;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #007BFF;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.github-link:hover {
     background-color: #007BFF;
     color: white;
-    border-radius: 5px;
 }
